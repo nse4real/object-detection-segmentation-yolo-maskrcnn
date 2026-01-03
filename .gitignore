@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Caches / ML artifacts
+.cache/
+torch_cache/
+**/.cache/
+**/runs/
+**/weights/
+**/*.pt
+**/*.pth
+
+# Logs / outputs
+*.log
+outputs/
+results/
