@@ -151,3 +151,16 @@ Example outputs generated using YOLOv8 for object detection and instance segment
 - **Folder hygiene prevents repo rot:** Keeping `runs/`, `venv/`, and large artifacts out of git keeps the repo lightweight and reviewable.
 - **Visual proof beats claims:** Including representative detection and segmentation examples makes results verifiable within seconds.
 - **Segmentation adds compute cost:** Instance masks are heavier than bounding boxes, so batching and image sizing become more important for scale.
+
+## Known limitations
+
+- **Example-driven demo:** Current examples focus on a small number of images rather than a benchmark dataset with metrics (mAP/IoU), so results are qualitative.
+- **No formal evaluation pipeline:** There is no automated scoring, threshold sweeping, or error analysis loop yet.
+- **Hardware variability:** GPU vs CPU inference performance differs significantly, and CUDA-enabled Torch builds may not be portable across machines.
+
+## Future enhancements
+
+- Add a small evaluation script to compute basic metrics on a labelled sample set (mAP for detection, IoU for segmentation).
+- Add configurable thresholds (confidence/IoU) and image resizing options via CLI args.
+- Add a lightweight CI check (lint + import smoke test) to keep the repo healthy.
+- Add a short “model selection” note explaining when to use detection vs segmentation.
