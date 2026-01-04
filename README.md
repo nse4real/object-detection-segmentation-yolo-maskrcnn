@@ -144,3 +144,10 @@ Example outputs generated using YOLOv8 for object detection and instance segment
 - Models used: YOLOv8 (detection and segmentation variants).
 - Outputs are generated via Ultralytics default pipelines and saved from `runs/`.
 - Images here are copied into `images/` to provide stable, versioned examples.
+
+## Lessons learned
+
+- **Outputs are easy, reproducibility is harder:** Pinning `torch/ultralytics/opencv` versions matters because small version changes can break inference or GPU compatibility.
+- **Folder hygiene prevents repo rot:** Keeping `runs/`, `venv/`, and large artifacts out of git keeps the repo lightweight and reviewable.
+- **Visual proof beats claims:** Including representative detection and segmentation examples makes results verifiable within seconds.
+- **Segmentation adds compute cost:** Instance masks are heavier than bounding boxes, so batching and image sizing become more important for scale.
