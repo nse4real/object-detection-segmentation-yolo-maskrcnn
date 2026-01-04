@@ -124,3 +124,8 @@ docs/
 
 outputs/ (ignored in git)
 
+## Sample assets
+
+- Sample input image: `images/source_image.jpg`
+- Project overview deck: `docs/Object_Detection_Project_Overview.pptx`
+- Slide generation script: `scripts/generate_presentation.py`
