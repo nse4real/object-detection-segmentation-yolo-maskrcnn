@@ -129,3 +129,18 @@ outputs/ (ignored in git)
 - Sample input image: `images/source_image.jpg`
 - Project overview deck: `docs/Object_Detection_Project_Overview.pptx`
 - Slide generation script: `scripts/generate_presentation.py`
+
+## Results
+
+Example outputs generated using YOLOv8 for object detection and instance segmentation.
+
+### Object detection
+![Detection result](images/result_detect_street.jpg)
+
+### Instance segmentation
+![Segmentation result](images/result_segment_street.jpg)
+
+### Notes
+- Models used: YOLOv8 (detection and segmentation variants).
+- Outputs are generated via Ultralytics default pipelines and saved from `runs/`.
+- Images here are copied into `images/` to provide stable, versioned examples.
