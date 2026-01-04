@@ -165,3 +165,6 @@ Example outputs generated using YOLOv8 for object detection and instance segment
 - Add a lightweight CI check (lint + import smoke test) to keep the repo healthy.
 - Add a short “model selection” note explaining when to use detection vs segmentation.
 For planned improvements, see: `docs/ROADMAP.md`.
+
+## Related project
+See also: Sentinel-2 NDVI pipeline (EO data access + raster processing): https://github.com/nse4real/sentinel2-ndvi-pipeline
