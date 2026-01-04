@@ -164,3 +164,4 @@ Example outputs generated using YOLOv8 for object detection and instance segment
 - Add configurable thresholds (confidence/IoU) and image resizing options via CLI args.
 - Add a lightweight CI check (lint + import smoke test) to keep the repo healthy.
 - Add a short “model selection” note explaining when to use detection vs segmentation.
+For planned improvements, see: `docs/ROADMAP.md`.
